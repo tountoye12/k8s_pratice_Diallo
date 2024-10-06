@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-nginx
+  namespace: myproject-diallo
+spec:
+  containers:
+  - name: container-nginx
+    image: nginx
