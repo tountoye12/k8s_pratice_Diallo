@@ -1,9 +1,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: pod-nginx
+  name: pod-nginx  # Make sure the name of each Pod is unique in Namespace.
   namespace: myproject-diallo
+  labels:
+    app: nginx
+    env: test
 spec:
   containers:
   - name: container-nginx
     image: nginx
+
